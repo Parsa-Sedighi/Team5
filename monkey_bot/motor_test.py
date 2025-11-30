@@ -60,7 +60,7 @@ def make_send_turn_command(ser, args):
 def main():
     ap = argparse.ArgumentParser(description="Motor test using SAME move logic as main script.")
     ap.add_argument("--serial_port", default="/dev/ttyACM0")
-    ap.add_argument("--baud_rate", type=int, default=115200)
+    ap.add_argument("--baud_rate", type=int, default=9600)
 
     # SAME behavior knobs
     ap.add_argument("--kp_turn", type=int, default=180)
